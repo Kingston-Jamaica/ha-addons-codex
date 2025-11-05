@@ -1,7 +1,7 @@
 name: "Codex CLI"
 slug: "codex_cli"
 description: "OpenAI Codex CLI in a web terminal via Ingress"
-version: "0.1.0"
+version: "0.1.1"
 stage: experimental
 arch:
   - amd64
