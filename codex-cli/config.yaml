@@ -1,0 +1,27 @@
+name: "Codex CLI"
+slug: "codex_cli"
+description: "OpenAI Codex CLI in a web terminal via Ingress"
+version: "0.1.0"
+stage: experimental
+arch:
+  - amd64
+  - aarch64
+init: false
+startup: application
+ingress: true
+ingress_port: 8099
+panel_icon: mdi:console
+panel_title: Codex
+homeassistant_api: false
+host_network: false
+apparmor: true
+backup: hot
+map:
+  - config:rw
+  - share:rw
+options:
+  api_key: ""
+  workdir: "/config"
+schema:
+  api_key: str?
+  workdir: str
