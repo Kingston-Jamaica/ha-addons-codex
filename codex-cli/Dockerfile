@@ -1,7 +1,7 @@
 ARG BUILD_FROM
 FROM ${BUILD_FROM}
 
-# Tools: bash, bashio (read /data/options.json), jq, nodejs, npm, ttyd, git, curl
+# Tools: bash, bashio, jq, nodejs, npm, ttyd, git, curl
 RUN apk add --no-cache \
       bash bashio jq \
       nodejs npm ttyd git curl ca-certificates
